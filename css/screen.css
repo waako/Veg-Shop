@@ -1,0 +1,39 @@
+
+body{
+    background: #A2C61F;color: #fff;font: normal normal 14px/16px "Lucida Grande", Tahoma, Verdana, Arial, sans-serif; }
+header {margin:10px 0 40px}
+header #logo {float:left}
+.heures_ouverture {float:right;margin-top:10px}
+h2 { font-size: 16px; font-weight: bold; font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;color: #fff; text-transform: uppercase; margin-bottom:8px;text-shadow:0px 1px 1px #666666}
+h3 { font-size: 16px; font-weight: bold; font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;color: #fff; text-transform: uppercase; margin-bottom:8px;text-shadow:0px 1px 1px #666666}
+h2 {margin-top:-30px;margin-bottom: 15px;}
+h3 {margin-top:-32px;margin-bottom: 15px;}
+h6 {font-size:11px;font-weight:normal;margin:-29px 0 8px;color:#fff;float:right}
+aside, .heures_ouverture {
+background:#fff; padding: 10px;
+/* Rounded Corners */
+-moz-border-radius: 12px; /* FF1+ */
+-webkit-border-radius: 12px; /* Saf3+, Chrome */
+border-radius: 12px; /* Opera 10.5, IE 9 */
+margin-bottom: 10px;
+color:#A2C61F;
+/* Box Shadow belo */
+-moz-box-shadow: 1px 1px 0px #666; /* FF3.5+ */
+-webkit-box-shadow: 1px 1px 2px #999; /* Saf3.0+, Chrome */
+box-shadow: 1px 1px 1px #666; /* Opera 10.5, IE 9.0 */
+}
+aside.col {overflow: visible;}
+aside p/*, aside h2, aside h3*/ {color:#A2C61F;text-shadow:0px 0px 1px #666666}
+
+/*dl {float:right;width:50%;margin-bottom:10px}*/
+dl dt {float:left;clear:both}
+dl dd {float:right;color:#8AAA19}
+
+small {font-size:11px;line-height:10px;color:#8AAA19}
+
+aside.col {overflow: visible;margin-bottom:30px;}
+aside#desserts {margin-top:-70px}
+aside#boissons {margin-top:20px}
+aside#notes {background:transparent;-webkit-box-shadow: none;margin: 0 auto;padding: 0;width: 97%; }
+aside#notes blockquote p {color: #fff;margin-top: 0px;text-align: center;width: 250px;margin: -100px auto 0; }
+aside p/*, aside h2, aside h3*/ {color:#A2C61F;text-shadow:0px 0px 1px #666666}

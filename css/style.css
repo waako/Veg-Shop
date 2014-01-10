@@ -1,0 +1,165 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+@font-face {
+	font-family: 'Lobster1.1Regular';
+	src: url('../fonts/Lobster_1.1_-webfont.eot');
+	src: local('☺'), url('../fonts/Lobster_1.1_-webfont.woff') format('woff'), url('../fonts/Lobster_1.1_-webfont.ttf') format('truetype'), url('../fonts/Lobster_1.1_-webfont.svg#webfont30G9S4nm') format('svg');
+	font-weight: normal;
+	font-style: normal; }
+    
+@font-face {
+	font-family: 'RalewayThin';
+	src: url('../fonts/raleway_thin-webfont.eot');
+	src: local('☺'), url('../fonts/raleway_thin-webfont.woff') format('woff'), url('../fonts/raleway_thin-webfont.ttf') format('truetype'), url('../fonts/raleway_thin-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal; }
+
+/* Site-wide properties ======================================================== */
+body{
+    font: normal normal 10px/10px Tahoma, Arial, Helvetica, Verdana, sans-serif;
+    background: #A2C61F;color: #fff; }
+    
+    /* Fibonacci based heading scale ratio */
+    h1{ font-size: 4.4em; font-weight: normal; }
+    h2{ font-size: 2.8em; font-weight: bold; }
+    h3{ font-size: 1.6em; font-weight: bold; font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;color: #fff; text-transform: uppercase; margin-bottom:8px;text-shadow:0px 1px 1px #666666}
+    h4{ font-size: 1.4em; font-weight: bold;font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;color: #fff; text-transform: uppercase; margin-bottom:8px;text-shadow:0px 0px 1px #666666 }
+    h5{ font-size: 1.2em; font-weight: bold;font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;color: #fff; text-transform: uppercase; margin-bottom:8px; }
+    h6 {font-size:11px;font-weight:normal;}
+
+img.left {margin-right:40px;}
+/* Reusable classes ============================================================ */
+
+/* Left & Right alignment */
+.left{ float: left; }
+.right{ float: right; }
+
+/* The inside class provides consistent padding. To be used often! */
+.inside{ padding: 20px; }
+
+/* The fraction classes are useful for column lists */
+.half, .third, .quarter, .fifth, .sixth{ width: 100%; }
+.half li, .third li, .quarter li, .fifth li, .sixth li{ float: left; }
+.half li{ padding-right: 5%; width: 45% }
+.third li{  padding-right: 5%; width: 28.3% }
+.quarter li{  padding-right: 5%; width: 20% }
+.fifth li{  padding-right: 5%; width: 15% }
+
+/* For when a <br /> just ain't enough */
+.separator{
+    clear: both;
+    float: left;
+    height: 1px;
+    width: 100%; }
+
+/* Basic Structure ============================================================= */
+#wrap{
+    margin: 0 auto;
+    position: relative;
+    width: 960px; }
+
+    /* Header */
+    header{
+        float: left;
+        width: 100%;
+        text-align: center; }
+    
+    /* Content */
+    article{
+        float: left;
+        width: 66.7%; }
+    
+    /* Sidebar */
+    aside{
+        float: left;
+        /*width: 33.3%;*/ }
+        
+    /* Footer */
+    footer{
+        float: left;
+        width: 100%; }
+ul li, dl, p {font-size:1.4em;line-height: 1.2;}
+.clear {clear:both;}
+
+/* Project specifics =========================================================== */
+/* Pour some CSS below ========================================================= */
+ul li {list-style: none; }
+ul li.heures {color:#e9e9e9}
+
+dl.menu {float:right;width:50%;margin-bottom:10px}
+dl.menu dt {float:left;clear:both}
+dl.menu dd {float:right}
+
+article section {padding-right: 5%; width: 28.3%}
+
+aside .inside {
+	background:#fff; 
+	-moz-border-radius: 12px; /* FF1+ */
+	-webkit-border-radius: 12px; /* Saf3+, Chrome */
+	border-radius: 12px; /* Opera 10.5, IE 9 */
+	margin-bottom: 10px;
+	color:#A2C61F;
+	
+}
+aside .inside h3, aside .inside ul li.heures  {color:#A2C61F;text-shadow:none}
+
+
+/* The H1 declarations - for @font-face presentational purposes only */
+/*h1{ font: 88px 'Lobster1.1Regular', Arial, sans-serif; }
+    h1 span{ font: 88px RalewayThin, Arial, sans-serif; letter-spacing: -4px }*/
+    
+/* Mess of CSS from inline stylesheet - Clean up one day! */
+body{
+    background: #A2C61F;color: #fff;font: normal normal 14px/16px "Lucida Grande", Tahoma, Verdana, Arial, sans-serif; }
+header {margin:10px 0 40px}
+header #logo {float:left}
+.heures_ouverture {float:right;margin-top:10px;}
+dl.heures_ouverture dd, .heures_ouverture dt, .heures_ouverture dd.heures {color:#fff;background:#A2C61F}
+h2 { font-size: 16px; font-weight: bold; font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;color: #fff; text-transform: uppercase; margin-bottom:8px;text-shadow:0px 1px 1px #666666}
+h3 { font-size: 16px; font-weight: bold; font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;color: #fff; text-transform: uppercase; margin-bottom:8px;text-shadow:0px 1px 1px #666666}
+h2 {margin-top:-30px;margin-bottom: 15px;}
+h3 {margin-top:-32px;margin-bottom: 15px;}
+h6 {font-size:11px;font-weight:normal;margin:-29px 0 8px;color:#fff;float:right}
+h6.prix {font-size:16px;margin-top:-30px;}
+aside {
+background:#fff; padding: 10px;
+/* Rounded Corners */
+-moz-border-radius: 12px; /* FF1+ */
+-webkit-border-radius: 12px; /* Saf3+, Chrome */
+border-radius: 12px; /* Opera 10.5, IE 9 */
+margin-bottom: 10px;
+color:#A2C61F;
+/* Box Shadow belo */
+-moz-box-shadow: 1px 1px 0px #999; /* FF3.5+ */
+-webkit-box-shadow: 1px 1px 2px #999; /* Saf3.0+, Chrome */
+box-shadow: 1px 1px 1px #999; /* Opera 10.5, IE 9.0 */
+}
+aside.col {overflow: visible;}
+aside#desserts {margin-top:-70px}
+aside#boissons {margin-top:20px}
+aside#notes {background:#A2C61F;color: #fff;margin-top: -90px;
+/* Rounded Corners */
+-moz-border-radius: 0; /* FF1+ */
+-webkit-border-radius: 0; /* Saf3+, Chrome */
+border-radius: 0; /* Opera 10.5, IE 9 */
+/* Box Shadow belo */
+-moz-box-shadow: none; /* FF3.5+ */
+-webkit-box-shadow: none; /* Saf3.0+, Chrome */
+box-shadow: none; /* Opera 10.5, IE 9.0 */
+}
+aside p/*, aside h2, aside h3*/ {color:#A2C61F;text-shadow:0px 0px 1px #666666}
+
+/*dl {float:right;width:50%;margin-bottom:10px}*/
+dl {line-height:1.5;}
+dl.menu {background: url(http://web-graphics.com/mtarchive/dot.gif) repeat-x 0 1em;/** border-bottom:1px dotted;*/width:100%; overflow:auto;}
+dl dt {float:left;clear:both;background:#fff;}
+dl dd.prix, dl dd.heures {float:right;color:#8AAA19;background:#fff}
+dl dd.ingredients {float: left;margin:-4px 0 10px;line-height:0.9;width:100%}
+
+small {font-size:11px;line-height:10px;color:#8AAA19}
+blockquote{color:#fff;quotes:"\201c" "\201d" "\2018" "\2019"; }
+blockquote p {text-indent:30px;color:#fff;text-shadow:none;margin-top:-20px}
+blockquote:before {content: open-quote;display:block;font-size:500%;width:50px;height:0;margin-left:-0.3em}
+blockquote:after {content: close-quote;display:block;font-size:400%;width:50px;height:50px;margin-left:220px;margin-top:-30px}
